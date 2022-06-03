@@ -1,38 +1,139 @@
-.App {
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s;
+}
+.error-title{
+  font-size: 32px;
+  font-family: "Agency FB", sans-serif;
+  font-weight: 600;
   text-align: center;
+  padding: 20px 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-title{
+  font-size: 32px;
+  font-family: "Agency FB", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 0;
+  text-shadow: 2px 2px 1px  dodgerblue;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-table{
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+  overflow: auto;
 }
+thead:nth-child(1) {
+  font-size: 20px;
+  font-family: "Agency FB",sans-serif;
+  font-weight: 600;
+}
+.main-table tr {
+  border-bottom: 1px solid lightgrey;
+}
+.main-table tr td {
+  border-bottom: 1px solid #e8e8e8;
+  max-width: 200px;
+  width: 200px;
+  height: 45px;
+  text-align: center;
+  position: relative;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.main-table tr td button {
+  color: #fff;
+  font-size: 16px;
+  background: #f20f20;
+  border: 0;
+  height: 36px;
+  width: 36px;
+  border-radius: 5px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  margin: auto;
+  cursor: pointer;
 
-.App-link {
-  color: #61dafb;
 }
+.main-table tr td button:hover {
+  background: rgba(242, 15, 32, 0.78);
+}
+.main-table tr td button svg{
+  height: 80%;
+  width: 80%;
+}
+.input-wrapper{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.input-wrapper .main-input {
+  width: 260px;
+  height: 32px;
+  outline: none;
+  border: 3px solid rgb(114, 166, 191);
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: auto;
+  margin-bottom: 15px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+}
+.add-btn{
+  color: #fff;
+  font-size: 16px;
+  font-family: "Bodoni MT Poster Compressed",sans-serif;
+  width: 280px;
+  height: 32px;
+  background: #16c916;
+  outline: none;
+  border: 0;
+  margin: auto;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+.add-btn:hover{
+  background: rgba(22, 201, 22, 0.78);
+}
+.action{
+  text-align: right!important;
+}
+.edit-btn{
+  background: #16c916 !important;
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+.edit-btn:hover{
+  background: rgba(22, 201, 22, 0.78) !important;
+}
+.select-wrap{
+  width: 60%;
+  margin:30px auto;
+}
+.sort-select{
+  width: 140px;
+  height: 38px;
+  outline: none;
+  border: 3px solid rgb(114, 166, 191);
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+.search-input{
+  width: 260px;
+  height: 32px;
+  outline: none;
+  border: 3px solid rgb(114, 166, 191);
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-left: 32.4%;
 }
